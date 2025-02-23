@@ -17,6 +17,12 @@ header {
     align-items: center;
 }
 
+.nav{
+    align-items: center;
+    display: flex;
+    padding: 1rem;
+}
+
 .nav-links {
     list-style: none;
     display: flex;
@@ -66,7 +72,7 @@ header {
 }
 
 .contact{
-    color: #ddc7dd;
+    color: black;
 }
 
 .contact form {
