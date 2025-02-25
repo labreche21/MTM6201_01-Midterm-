@@ -1,141 +1,319 @@
+/* General Styles */
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-    min-height: 100vh;
+    color: #333;
 }
 
 header {
-    background: #FEF7F2;
-    color: white;
-    padding: 1rem;
+    background: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.nav{
-    align-items: center;
-    display: flex;
-    padding: 1rem;
+nav .logo {
+    font-size: 24px;
+    font-weight: bold;
 }
 
-.nav-links {
+nav ul {
     list-style: none;
     display: flex;
-    gap: 15px;
 }
 
-.nav-links a {
-    color: black;
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
     text-decoration: none;
+    color: #333;
 }
 
-.home {
-    background-color: #FEF7F2;
+.signup-btn {
+    background: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.hero {
+    margin-top: 50px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.cta-btn {
+    background: #007BFF;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* We Help You Find Your Dream Home Section */
+.dream-home-section {
+    padding: 50px 20px;
+    text-align: center;
+    background: #f9f9f9;
+}
+
+.dream-home-content h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.dream-home-content p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Why Choose Us Section */
+.why-choose-us {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.why-choose-us h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.feature {
+    border: #333 1px solid;
+    width: 22%;
+    margin-bottom: 20px;
+}
+
+.feature h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.feature p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Popular Residences Section */
+.popular-residences {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.popular-residences h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.residences {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.residence {
+    width: 30%;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.residence h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.residence p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Testimonials Section */
+.testimonials {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.testimonials h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.testimonial-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 30%;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.card p {
+    font-size: 16px;
+    color: #666;
+}
+
+.card h4 {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+/* Do You Have Any Questions? Get Help From Us Section */
+.help-section {
+    padding: 50px 20px;
+    text-align: center;
+    background: #f9f9f9;
+}
+
+.help-section h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.help-options {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.help-option {
+    width: 30%;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.help-option h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.help-option p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.help-option form {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: left;
-    height: 50vh;
-    text-align: left;
-    color: black;
-}
- 
-    .listings {
-        border: 1px solid #ccc;
-        padding: 15px;
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        color: #DDC7BB;
-     
 }
 
-.listings-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    padding: 20px;
-    justify-content: center;
-}
-
-.review {
-    border: 1px solid #ccc;
-    padding: 15px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color:#FEF7F2 ;
-}
-
-.review-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    padding: 20px;
-    justify-content: center;
-}
-
-
-.about{
-    border: 1px solid #ccc;
-    padding: 15px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color:  #DDC7BB;
-}
-
-.about-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    padding: 20px;
-    justify-content: center;
-}
-
-.contact{
-    color: black;
-}
-
-.contact form {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 10px;
-    max-width: 400px;
-    margin: auto;
-}
-
-button {
- color: white ;
- background-color: #2B1B12;
-}
-
-.sign form{
-    display: flex;
-    grid-template-columns: 1fr;
-    gap: 1px;
-    max-width: 400px;
-    margin: auto;
-    background-color: #DDC7BB;
-    align-items: center;
-    padding: 100px;
-    color: #FBF5F1;
-}
-
-footer {
-    text-align: center;
+.help-option input {
     padding: 10px;
-    background: #DDC7BB;
-    color: black;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.help-option button {
+    background: #007BFF;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: white;
+    padding: 50px 20px;
+}
+
+.footer-content {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    width: 22%;
+    margin-bottom: 20px;
+}
+
+.footer-section h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer-section form {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-section input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.footer-section button {
+    background: #007BFF;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.social-media {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social-media a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
 }

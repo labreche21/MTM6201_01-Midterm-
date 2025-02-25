@@ -3,145 +3,174 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Find Your Dream Home</title>
+    <title>Dwello - Find Your Dream Home</title>
     <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
     <header>
-        <nav aria-label="Main Navigation">
-            <ul class="nav-links" role="menu">
-                <li role="menuitem"><a href="#sign up">Dwello</a></li>
-                <li role="menuitem"><a href="#home">Home</a></li>
-                <li role="menuitem"><a href="#about">Service</a></li>
-                <li role="menuitem"><a href="#listings">Agents</a></li>
-                <li role="menuitem"><a href="#contact">Contact</a></li>
-                <li role="menuitem"><a href="#help">☌</a></li>
-                <li role="menuitem"><a href="#contact">Ω</a></li>
-                <button type="sign up">sign up</button>
+        <nav>
+            <div class="logo">Dwello</div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#agents">Agents</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#contact">⚲</a></li>
+                <li><a href="#contact">Ω</a></li>
+                <li><a href="#signup" class="signup-btn">Sign Up</a></li>
             </ul>
         </nav>
-    </header>
-     <main>
-        <section id="home" class="home">
+        <div class="home">
+            ,<img src="./images/Unknown.png" alt="house">
             <h1>Find Your Dream Home</h1>
-            <img src="./images/Unknown.png" alt="house">
-            <p>Explore our curated selections of exquiste properties meticulously tailorled to your unique dream home vision.</p>
-            <button type="submit">sign up</button>
-        </section>
+            <p>We Help You To Find Your Dream Home</p>
+            <button class="cta-btn">Sign Up</button>
+        </div>
+    </header>
 
-        <section id="sign" class="sign">
-            <form>
-                
-                <label for="location"></label>
-                <input type="location" id="location" required>
-                <label for="type"></label>
-                <input type="type" id="type" required>
-                <label for="price range"></label>
-                <input type="price range" id="price range" required>
-                
-                <button type="submit">sign up</button>
-            </form>
-        </section>
-
-        <section id="help" class="help">
-            <h1>We Help to Find Your Dream Home</h1>
-            <img src="./images/Unknown-1.png" alt="house 1">
+    <section class="dream-home-section"></section>
+        <div class="dream-home-content">
+            <img src="./images/Unknown-1.png" alt="house">
+            <h2>We Help You Find Your Dream Home</h2>
             <p>From cozy cottages to luxurious estates, our dedicated team guides you through every step of the journey, ensuring your dream home becomes a reality.</p>
-            <p>8K+ 6K+  2K+</p>
-            <p>Houses availble houses sold trusted agents </p>
-        </section>
-        
-        <section id="about" class="about">
-            <h2>Why chose us Us</h2>
-            <p>Elevating your Home buying Experiance ith expertise,Integrity and unmatched personalized service</p>
-            <div class="about-container">
-            <article class="about">
-                <img src="./images/icon 3.png" alt="Nav point">
-                <h3>expert guidance</h3>
-                <p>Benefit from our team's seasoned expertise for a smooth buying experiance</p>
-            </article>
-            <article class="about">
-                <img src="./images/icon 4.png" alt="User icon">
-                <h3>Personalized service</h3>
-                <p>our services adapt to your unique needs,making your journey stress-free</p>
-            </article>
-            <article class="about">
-                <img src="./images/icon 5.png" alt="clip board">
-                <h3>transparent process</h3>
-                <p>stay informed with our clear and honest approach to buying your home</p>
-            </article>
+            <p>Elevating Your Home Buying Experience with Expertise, Integrity, and Unmatched Personalized Service.</p>
+        </div>
+    </section>
+
+    <section class="why-choose-us">
+        <h2>Why Choose Us</h2>
+        <div class="features">
+            <div class="feature">
+                <img src="./images/icon 3.png" alt="nav"> 
+                <h3>Expert Guidance</h3>
+                <p>Benefit from our team's seasoned expertise for a smooth buying experience.</p>
             </div>
-            <article class="about">
-                <img src="./images/icon 6.png" alt="2 hands doing a handshake">
-                <h3>exceptional support</h3>
-                <p>providing peace of mind with our responsive and attentive customer service</p>
-            </article>
+            <div class="feature">
+                <img src="./images/icon 4.png" alt="nav"> 
+                <h3>Personalized Service</h3>
+                <p>Our services adapt to your unique needs, making your journey stress-free.</p>
             </div>
-        </section>
-
-
-        <section id="listings" class="listings">
-            <h2>Our Popular residances</h2>
-            <div class="listings-container">
-                <article class="listings">
-                    <img src="./images/Unknown-2.png" alt="Modern house">
-                    <h3>San Fransico CA</h3>
-                    <p>$2,500,00- 4 Beds, 3,500 sqft</p>
-                </article>
-                <article class="listings">
-                    <img src="./images/Unknown-3.png" alt="Modern House 2">
-                    <h3>Beverly Hills , CA</h3>
-                    <p>$850,000 - 3 Beds, 1,500 sqft</p>
-                </article>
-                <article class="listings">
-                    <img src="./images/Unknown-4.png" alt="Modern House 3">
-                    <h3>Palo Alto, CA</h3>
-                    <p>$3,700,000 - 6 Beds, 4,000 sqft</p>
-                </article>
+            <div class="feature">
+                <img src="./images/icon 5.png" alt="nav"> 
+                <h3>Transparent Process</h3>
+                <p>Stay informed with our clear and honest approach to buying your home.</p>
             </div>
-        </section>
+            <div class="feature">
+                <img src="./images/icon 6.png" alt="nav"> 
+                <h3>Exceptional Support</h3>
+                <p>Providing peace of mind with our responsive and attentive customer service.</p>
+            </div>
+        </div>
+    </section>
 
+    <section class="popular-residences">
+        <h2>Our Popular Residences</h2>
+        <div class="residences">
+            <div class="residence">
+                <img src="./images/Unknown-2.png" alt="house">
+                <h3>San Francisco, California</h3>
+                <p>$2,500,000</p>
+                <p>4 Rooms | 3,500 sq ft</p>
+                <button class="signup-btn">Sign Up</button>
+            </div>
+            <div class="residence">
+                <img src="./images/Unknown-3.png" alt="house">
+                <h3>Beverly Hills, California</h3>
+                <p>$850,000</p>
+                <p>3 Rooms | 1,500 sq ft</p>
+                <button class="signup-btn">Sign Up</button>
+            </div>
+            <div class="residence">
+                <img src="./images/Unknown-4.png" alt="house">
+                <h3>Palo Alto, California</h3>
+                <p>$3,700,000</p>
+                <p>6 Rooms | 4,000 sq ft</p>
+                <button class="signup-btn">Sign Up</button>
+            </div>
+        </div>
+    </section>
 
-        <section id="review" class="review">
-            <h2>What Peopple Say About Dwello</h2>
-            <div class="review-container">
-                <article class="review">
-                    <img src="./images/Unknown-5.png" alt="Modern house">
-                    <h3>Sarah Nguyen </h3>
-                    <p>Dwello truly cares about their clients. They listened to my needs and preferences and helped me find the perfect home in the Bay Area. Their professionalism and attention to detail are unmatched.</p>
-                </article>
-                <article class="review">
-                    <img src="./images/Unknown-6.png" alt="Luxury Villa">
-                    <h3>Michheal Rodriguez</h3>
-                    <p>I had a fantastic experience working with Dwello. Their expertise and personalized service exceeded my expectations. I found my dream home quickly and smoothly. Highly recommended!</p>
-                </article>
-                <article class="review">
-                    <img src="./images/Unknown-7.png" alt="Luxury Villa">
-                    <h3>Emily Johnson</h3>
-                    <p>Dwello made my dream of owning a home a reality! Their team provided exceptional support and guided me through every step of the process. I couldn't be happier with my new home!</p>
-                </article>
+    <section class="testimonials">
+        <h2>What People Say About Dwello</h2>
+        <div class="testimonial-cards">
+            <div class="card">
+                <img src="./images/Unknown-5.png" alt="house">
+                <p>"Dwello truly cares about their clients. They listened to my needs and preferences and helped me find the perfect home in the Bay Area. Their professionalism and attention to detail are unmatched."</p>
+                <h4>Sarah Nguyen</h4>
+                <p>San Francisco</p>
+                <p>5.0</p>
+            </div>
+            <div class="card">
+                <img src="./images/Unknown-6.png" alt="house">
+                <p>"I had a fantastic experience working with Dwello. Their expertise and personalized service exceeded my expectations. I found my dream home quickly and smoothly. Highly recommended!"</p>
+                <h4>Michael Rodriguez</h4>
+                <p>San Diego</p>
+                <p>4.5</p>
+            </div>
+            <div class="card">
+                <img src="./images/Unknown-7.png" alt="house">
+                <p>"Dwello made my dream of owning a home a reality! Their team provided exceptional support and guided me through every step of the process. I couldn't be happier with my new home!"</p>
+                <h4>Emily Johnson</h4>
+                <p>Los Angeles</p>
+                <p>5.0</p>
+            </div>
+        </div>
+    </section>
 
+    <section class="help-section">
+        <h2>Do You Have Any Questions? Get Help From Us</h2>
+        <div class="help-options">
+            <div class="help-option">
+                <p>Chat Live with Our Support Team Browse Our FAQ </p>
             
-                <button type="submit">right arrow</button>
-                <button type="submit">left arrow</button>
-         </div>
-        </section>
-        
-        <section id="contact" class="contact">
-            <h2>Do You Have Any Questions? Get Help From Us</h2>
-            <p> Chat live with our support team     Browse our FAQ</p>
-            <form>
-                
-                <label for="email"></label>
-                <input type="email" id="email" required>
-                
-                <button type="submit">submit</button>
-            </form>
-        </section>
-    </main>
+                <form>
+                    <input type="email" placeholder="Enter your email address...">
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
     <footer>
-       <p> dwello Bringing you closer to your dream home,one click at a time  support, find us, our social,our story,faq,events, instagram, careers,contact us,locations,facebook,our team,help center,newsletter,twitter, resources, terms of service</p>
-        <p>&copy; 2025 Dwello. All rights reserved.</p>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About</h3>
+                <ul>
+                    <li><a href="#our-story">Our Story</a></li>
+                    <li><a href="#careers">Careers</a></li>
+                    <li><a href="#our-team">Our Team</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Resources</h3>
+                <ul>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#contact-us">Contact Us</a></li>
+                    <li><a href="#help-center">Help Center</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Support</h3>
+                <ul>
+                    <li><a href="#terms-of-service">Terms of Service</a></li>
+                    <li><a href="#events">Events</a></li>
+                    <li><a href="#locations">Locations</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Newsletter</h3>
+                <p>Bringing you closer to your dream home, one click at a time.</p>
+                <form>
+                    <input type="email" placeholder="Enter your email address...">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="social-media">
+            <a href="#instagram">Instagram</a>
+            <a href="#facebook">Facebook</a>
+            <a href="#twitter">Twitter (X)</a>
+        </div>
     </footer>
 </body>
 </html>
