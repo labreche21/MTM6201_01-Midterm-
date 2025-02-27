@@ -1,14 +1,14 @@
 /* General Styles */
-/* General Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     color: #333;
+    line-height: 1.6;
 }
 
 header {
-    background: #f4f4f4;
+    background: #FEF7F2;
     padding: 20px;
     text-align: center;
 }
@@ -27,10 +27,7 @@ nav .logo {
 nav ul {
     list-style: none;
     display: flex;
-}
-
-nav ul li {
-    margin: 0 15px;
+    gap: 20px;
 }
 
 nav ul li a {
@@ -39,30 +36,34 @@ nav ul li a {
 }
 
 .signup-btn {
-    background: #007BFF;
+    background: #2B1B12;
     color: white;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    text-align: left;
 }
 
-.hero {
+.home {
     margin-top: 50px;
+    text-align: left;
 }
 
-.hero h1 {
+.home h1 {
     font-size: 48px;
     margin-bottom: 20px;
+    align-items: left;
 }
 
-.hero p {
+.home p {
     font-size: 18px;
     margin-bottom: 30px;
+    align-items: left;
 }
 
 .cta-btn {
-    background: #007BFF;
+    background: #2B1B12;
     color: white;
     padding: 15px 30px;
     border: none;
@@ -100,15 +101,17 @@ nav ul li a {
 }
 
 .features {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
 }
 
 .feature {
-    border: #333 1px solid;
-    width: 22%;
-    margin-bottom: 20px;
+    background-color:#DDC7BB;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    text-align: center;
 }
 
 .feature h3 {
@@ -133,17 +136,17 @@ nav ul li a {
 }
 
 .residences {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
 }
 
 .residence {
-    width: 30%;
-    margin-bottom: 20px;
+    background-color: #DDC7BB;
     padding: 20px;
     border: 1px solid #ddd;
     border-radius: 10px;
+    text-align: center;
 }
 
 .residence h3 {
@@ -158,6 +161,7 @@ nav ul li a {
 
 /* Testimonials Section */
 .testimonials {
+    background-color: #FEF7F2;
     padding: 50px 20px;
     text-align: center;
 }
@@ -168,17 +172,17 @@ nav ul li a {
 }
 
 .testimonial-cards {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
 }
 
 .card {
-    width: 30%;
-    margin-bottom: 20px;
+    background-color: #DDC7BB;
     padding: 20px;
     border: 1px solid #ddd;
     border-radius: 10px;
+    text-align: center;
 }
 
 .card p {
@@ -195,7 +199,6 @@ nav ul li a {
 .help-section {
     padding: 50px 20px;
     text-align: center;
-    background: #f9f9f9;
 }
 
 .help-section h2 {
@@ -204,66 +207,68 @@ nav ul li a {
 }
 
 .help-options {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
 }
 
 .help-option {
-    width: 30%;
-    margin-bottom: 20px;
     padding: 20px;
-    border: 1px solid #ddd;
     border-radius: 10px;
+    text-align: center;
+    align-items: center;
 }
 
 .help-option h3 {
     font-size: 24px;
     margin-bottom: 10px;
+    align-items: center;
 }
 
 .help-option p {
     font-size: 16px;
     color: #666;
     margin-bottom: 20px;
+    align-items: center;
 }
 
 .help-option form {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    gap: 10px;
+    align-content: center;
 }
 
 .help-option input {
     padding: 10px;
-    margin-bottom: 10px;
     border: 1px solid #ddd;
     border-radius: 5px;
+    align-content: center;
+
 }
 
 .help-option button {
-    background: #007BFF;
+    background: #2B1B12;
     color: white;
     padding: 10px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    align-content: center;
 }
 
-/* Footer */
+/* Footer Section */
 footer {
-    background: #333;
-    color: white;
+    background: #DDC7BB;
+    color: black;
     padding: 50px 20px;
+    text-align: center;
 }
 
 .footer-content {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.footer-section {
-    width: 22%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
     margin-bottom: 20px;
 }
 
@@ -283,37 +288,16 @@ footer {
 
 .footer-section ul li a {
     text-decoration: none;
-    color: white;
-}
-
-.footer-section form {
-    display: flex;
-    flex-direction: column;
-}
-
-.footer-section input {
-    padding: 10px;
-    margin-bottom: 10px;
-    border: none;
-    border-radius: 5px;
-}
-
-.footer-section button {
-    background: #007BFF;
-    color: white;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+    color: black;
 }
 
 .social-media {
-    text-align: center;
-    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
 
 .social-media a {
-    margin: 0 10px;
     color: white;
     text-decoration: none;
 }
