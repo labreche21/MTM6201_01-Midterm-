@@ -71,6 +71,10 @@ nav ul li a {
     cursor: pointer;
 }
 
+.feature-btn{
+    background: #2B1B12;
+}
+
 /* We Help You Find Your Dream Home Section */
 .dream-home-section {
     padding: 50px 20px;
